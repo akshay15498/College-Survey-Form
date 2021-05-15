@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+
+    <style>
+        /* Styling the Body element i.e. Color,
+		Font, Alignment */
+        body {
+            background-color: #8612e53b;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #ebebeb;
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 30px 20px;
+            box-shadow: 36px 39px 22px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 14px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input,
+		select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 15px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio
+		button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #8b8cff;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 35px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JSPM ICOER Survey Form</h1>
+    
+    <!-- Create Form -->
+    <form id="form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="age" placeholder="Enter your age" />
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">
+                    Professional
+                </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                Would you recommed JSPM ICOER
+                to a freinds?
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed">Maybe</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Are you satisfied with the teaching staff and their teaching methods?</label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Extremely satisfied</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Very satisfied</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Satisfied</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Dissatisfied</input></label>
+        </div>
+
+        <div class="form-control">
+            <label>
+                How satisfied are you with the cleanliness and variety of food items available in the cafeteria?
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Extremely satisfied</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Very satisfied</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Satisfied</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Dissatisfied</input></label>
+        </div>
+        <div class="form-control">
+            <label>
+                How supportive were the faculty members?
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Extremely supportive</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Very supportive</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">supportive</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Unsupportive</input></label>
+        </div>
+        <div class="form-control">
+            <label>
+                Do you think faculty and support staff at the college were helpful?
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Very helpful</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Helpful</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Neither helpful nor unhelpful</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Unhelpful</input></label>
+        </div>
+        <div class="form-control">
+            <label>
+                Do you think faculty and support staff at the college were helpful?
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Very helpful</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Helpful</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Neither helpful nor unhelpful</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Unhelpful</input></label>
+        </div>
+        <div class="form-control">
+            <label>
+                How about your overall experience with this college?
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">I don’t have a job</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">No, I manage them both well</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Yes, but rarely</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Yes, often</input></label>
+        </div>
+        <div class="form-control">
+            <label>
+                What do you think about extracurricular activities?
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">They are too few</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">They are just right</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">I was overwhelmed with the number</input></label>
+
+        </div>
+        <div class="form-control">
+            <label>
+                Does your college have a dedicated training and placement cell?
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Yes</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">No</input></label>
+
+        </div>
+        <div class="form-control">
+            <label>
+                Where and how do you search for or discover the companies interested for campus placements?
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Linkedil</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Facebook</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Personal Connections and contacts</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Others</input></label>
+        </div>
+
+
+
+
+
+
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment" placeholder="Enter your comment here">
+			</textarea>
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>
